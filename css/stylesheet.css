@@ -1,0 +1,83 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #85dcb0;
+    background-color: gray;
+}
+
+body {
+    background-color: #85dcb170;
+    position: relative;
+    height: 100%;
+}
+
+/*Start Header*/
+.navbar {
+    background-color: #85DCB0;
+}
+
+#navbar-textlogo {
+    float: left;
+    margin: 5px 15px 0 0;
+}
+/*End Header*/
+
+/*Start Main-Content*/
+#index-image-aayush {
+    width: 40vw;
+    border-radius: 50%;
+    margin: 20px 10px 20px 10px;
+    transition-duration: 1s;
+}
+
+#index-image-aayush:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 100px #7cdbac, 10px 10px 15px #7cdbac;
+}
+
+#index-header-about {
+    align-self: center;
+    padding: 20px 50px 20px 70px;
+}
+
+#index-header-about>span {
+    font-size: 2rem;
+}
+
+#index-header-about>p {
+    margin-top: 20px;
+}
+
+#index-about {
+    align-self: center;
+    margin-top: 10px;
+    padding: 20px 50px 20px 50px;
+}
+
+#resume-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#resume {
+    padding: 10px 20px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.main-content h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/*End Main-Content*/
+
+/*Start Footer*/
+#copyright-aayush {
+    font-size: 0.8rem;
+}
+/*End Footer*/

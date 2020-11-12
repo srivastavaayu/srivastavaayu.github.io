@@ -3,9 +3,63 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #85DCB0;
+    border-radius: 20px;
+}
+
 ::selection {
     color: #85dcb0;
-    background-color: gray;
+    background-color: transparent;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    #index-image-aayush {
+        width: 70vw;
+        border-radius: 50%;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        transition-duration: 1s;
+    }
+
+    #index-image-aayush:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 100px #7cdbac, 10px 10px 100px #7cdbac;
+    }
+
+    #resume-nav {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #index-image-aayush {
+        width: 40vw;
+        border-radius: 50%;
+        margin: 20px 10px 20px 10px;
+        transition-duration: 1s;
+    }
+
+    #index-image-aayush:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 100px #7cdbac, 10px 10px 100px #7cdbac;
+    }
+
+    #resume-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }
 
 body {
@@ -26,18 +80,6 @@ body {
 /*End Header*/
 
 /*Start Main-Content*/
-#index-image-aayush {
-    width: 40vw;
-    border-radius: 50%;
-    margin: 20px 10px 20px 10px;
-    transition-duration: 1s;
-}
-
-#index-image-aayush:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 100px #7cdbac, 10px 10px 15px #7cdbac;
-}
-
 #index-header-about {
     align-self: center;
     padding: 20px 50px 20px 70px;
@@ -55,12 +97,6 @@ body {
     align-self: center;
     margin-top: 10px;
     padding: 20px 50px 20px 50px;
-}
-
-#resume-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #resume {

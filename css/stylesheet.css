@@ -9,12 +9,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #85DCB0;
+    background: #85D6DC;
     border-radius: 20px;
 }
 
 ::selection {
-    color: #85dcb0;
+    color: #1dcad6;
     background-color: transparent;
 }
 
@@ -31,7 +31,7 @@
 
     #index-image-aayush:hover {
         transform: scale(1.1);
-        box-shadow: 10px 10px 100px #7cdbac, 10px 10px 100px #7cdbac;
+        box-shadow: 10px 10px 100px #85d6dc, 10px 10px 100px #85d6dc;
     }
 
     #resume-nav {
@@ -51,7 +51,7 @@
 
     #index-image-aayush:hover {
         transform: scale(1.1);
-        box-shadow: 10px 10px 100px #7cdbac, 10px 10px 100px #7cdbac;
+        box-shadow: 10px 10px 100px #85d6dc, 10px 10px 100px #85d6dc;
     }
 
     #resume-nav {
@@ -63,14 +63,14 @@
 }
 
 body {
-    background-color: #85dcb170;
+    background-color: #85d6dc70;
     position: relative;
     height: 100%;
 }
 
 /*Start Header*/
 .navbar {
-    background-color: #85DCB0;
+    background-color: #85d6dc;
 }
 
 #navbar-textlogo {
@@ -103,6 +103,10 @@ body {
     padding: 10px 20px;
     position: relative;
     overflow-y: scroll;
+}
+
+#about {
+    margin: 0px 20px;
 }
 
 .main-content h2 {

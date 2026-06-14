@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Work experience, education, and skills of Aayush Srivastava — Software Engineer."
+    />
+    <meta property="og:title" content="Work — Aayush Srivastava" />
+    <meta
+      property="og:description"
+      content="Software Engineer. Full-stack developer with experience across JavaScript, PHP, Python, React, and Laravel."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <title>Work — Aayush Srivastava</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap&font-display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap&font-display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    /></noscript>
+
+	<script>document.documentElement.classList.add('js-ready');</script>
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("as-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="icon" href="images/aayush.jpg" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a
+          href="index.html"
+          class="nav-logo"
+          aria-label="Aayush Srivastava — Home"
+        >
+          <span class="nav-logo-mark" aria-hidden="true">&lt;As/&gt;</span>
+          <span class="nav-logo-name">Aayush Srivastava</span>
+        </a>
+
+        <div class="nav-links" role="list">
+          <a href="index.html" class="nav-link" role="listitem">Home</a>
+          <a href="work.html" class="nav-link" role="listitem">Work</a>
+          <a href="projects.html" class="nav-link" role="listitem">Projects</a>
+          <a href="contact.html" class="nav-link" role="listitem">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle light/dark theme">
+            <svg
+              class="icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <a href="#resume-download" class="btn-nav-cta"> Download Résumé </a>
+          <button class="nav-mobile-toggle" aria-label="Open navigation menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html" class="nav-mobile-link">Home</a>
+      <a href="work.html" class="nav-mobile-link">Work</a>
+      <a href="projects.html" class="nav-mobile-link">Projects</a>
+      <a href="contact.html" class="nav-mobile-link">Contact</a>
+      <a href="#resume-download" class="nav-mobile-cta">Download Résumé</a>
+    </div>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content" class="page-wrapper">
+      <div class="container">
+        <!-- Page Hero -->
+        <header class="page-hero">
+          <p class="page-hero-eyebrow" data-animate>Work &amp; Experience</p>
+          <h1 class="page-hero-title" data-animate data-animate-delay="100">
+            Where I've been.<br />What I've built.
+          </h1>
+          <p class="page-hero-subtitle" data-animate data-animate-delay="200">
+            A track record of shipping real software, leading communities, and
+            contributing to open source at scale.
+          </p>
+        </header>
+
+        <!-- Resume download banner -->
+        <div class="resume-banner" id="resume-download" data-animate>
+          <div>
+            <p class="resume-banner-text">Want the full picture?</p>
+            <p class="resume-banner-sub">
+              Download my résumé as a PDF — formatted and ready to share.
+            </p>
+          </div>
+          <a
+            href="https://drive.google.com/uc?export=download&id=17REE_GJ0K7Mz2nwAwPUlYFi416L7_XmX"
+            download
+            class="btn btn-primary"
+            aria-label="Download résumé PDF"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF
+          </a>
+        </div>
+
+        <!-- ===================== EXPERIENCE ===================== -->
+        <section class="work-section" aria-labelledby="experience-heading">
+          <div class="work-section-header">
+            <h2 class="work-section-title" id="experience-heading" data-animate>
+              Experience
+            </h2>
+            <div class="work-section-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="work-timeline" role="list">
+            <!-- Trajector -->
+            <article class="work-entry" role="listitem" data-animate>
+              <div class="work-entry-meta">
+                <time class="work-period" datetime="2025"
+                  >May 2025 — Present</time
+                >
+                <span class="work-badge">Full-time</span>
+              </div>
+              <h3 class="work-role">Senior Software Engineer</h3>
+              <p class="work-company">
+                <a
+                  href="https://www.trajector.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Trajector</a
+                >
+              </p>
+              <ul class="work-description">
+                <li>
+                  Architected and developed a legal-tech platform for secure
+                  management of veterans' records, EHR data, and legal case
+                  workflows, enabling lawyers to interact with multiple services
+                  and represent clients effectively.
+                </li>
+                <li>
+                  Built a stakeholder portal using AngularJS, PHP, and
+                  JavaScript, integrating RESTful APIs and Webhooks across
+                  MySQL, MariaDB, and MongoDB to enable seamless multi-entity
+                  data management.
+                </li>
+                <li>
+                  Developed AI agents, workflows, and automation services using
+                  Python to eliminate manual operational processes, reducing
+                  processing time from ~30 minutes to under 5 minutes and
+                  significantly reducing Operations team workload.
+                </li>
+                <li>
+                  Leveraged a full AWS cloud stack including Lambda, S3, SQS,
+                  EKS, and EventBridge to build scalable, event-driven
+                  infrastructure supporting the platform.
+                </li>
+              </ul>
+              <br />
+              <div class="work-tech" aria-label="Technologies used">
+                <span class="work-tech-tag">JavaScript</span>
+                <span class="work-tech-tag">PHP</span>
+                <span class="work-tech-tag">Python</span>
+                <span class="work-tech-tag">AngularJS</span>
+                <span class="work-tech-tag">MySQL</span>
+                <span class="work-tech-tag">AWS</span>
+                <span class="work-tech-tag">REST APIs</span>
+                <span class="work-tech-tag">Git</span>
+              </div>
+            </article>
+
+            <article class="work-entry" role="listitem" data-animate>
+              <div class="work-entry-meta">
+                <time class="work-period" datetime="2024"
+                  >April 2024 - May 2025</time
+                >
+                <span class="work-badge">Full-time</span>
+              </div>
+              <h3 class="work-role">
+                Software Development Engineer - 2 (SDE-2)
+              </h3>
+              <p class="work-company">
+                <a
+                  href="https://www.acefone.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acefone (Real Time Data Services)</a
+                >
+              </p>
+              <ul class="work-description">
+                <li>
+                  Spearheaded modernization of legacy cloud telephony
+                  infrastructure by migrating to a microservices architecture
+                  using NestJS and Node.js, enhancing scalability and
+                  reliability for 1,000+ enterprise clients.
+                </li>
+                <li>
+                  Served as informal lead of the specialized webhook services
+                  team, architecting and maintaining a high-performance webhook
+                  system backed by Kafka and Redis, reducing execution time by
+                  40% and significantly improving processing throughput.
+                </li>
+                <li>
+                  Designed and implemented RESTful API throttling and rate
+                  limiting using AWS Lambda and Redis, reducing server load and
+                  safeguarding backend services against high-traffic spikes.
+                </li>
+                <li>
+                  Established monitoring and reliability practices across
+                  webhook services, ensuring consistent uptime and early
+                  detection of failures in event-driven pipelines.
+                </li>
+                <li>
+                  Led a team of 2-3 developers in delivering 200+
+                  custom-tailored cloud telephony implementations for 150+
+                  enterprise clients, directly contributing to 9% of company
+                  revenue in a fiscal year.
+                </li>
+              </ul>
+              <br />
+              <div class="work-tech" aria-label="Technologies used">
+                <span class="work-tech-tag">TypeScript</span>
+                <span class="work-tech-tag">React</span>
+                <span class="work-tech-tag">PHP</span>
+                <span class="work-tech-tag">Laravel</span>
+                <span class="work-tech-tag">Kafka</span>
+                <span class="work-tech-tag">MySQL</span>
+                <span class="work-tech-tag">MongoDB</span>
+                <span class="work-tech-tag">Redis</span>
+                <span class="work-tech-tag">AWS</span>
+                <span class="work-tech-tag">REST APIs</span>
+                <span class="work-tech-tag">Git</span>
+              </div>
+            </article>
+
+            <article class="work-entry" role="listitem" data-animate>
+              <div class="work-entry-meta">
+                <time class="work-period" datetime="2022"
+                  >February 2022 — March 2024</time
+                >
+                <span class="work-badge">Full-time</span>
+              </div>
+              <h3 class="work-role">
+                Software Development Engineer - 1 (SDE-1)
+              </h3>
+              <p class="work-company">
+                <a
+                  href="https://www.acefone.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acefone (Real Time Data Services)</a
+                >
+              </p>
+              <ul class="work-description">
+                <li>
+                  Developed core modules of the HPBX portal and dashboard UI
+                  using Laravel, React, and Node.js, implementing call routing
+                  logic and real-time data synchronization for a unified cloud
+                  telephony platform.
+                </li>
+                <li>
+                  Built and maintained backend telephony features including IVR,
+                  SIP/VoIP integration, call routing, call queuing, and CDR
+                  management using PHP and Asterisk.
+                </li>
+                <li>
+                  Designed and implemented RESTful APIs and webhook services
+                  backed by Kafka and Redis, improving webhook generation
+                  efficiency by 28% through a microservices-based architecture.
+                </li>
+                <li>
+                  Integrated JWT and OAuth-based authentication alongside
+                  third-party client-specific APIs, ensuring secure and reliable
+                  data exchange across external services.
+                </li>
+                <li>
+                  Solely delivered client-specific deployments of the HPBX
+                  platform for 150+ enterprise clients as the primary developer,
+                  supporting large-scale adoption of the platform.
+                </li>
+              </ul>
+              <div class="work-tech" aria-label="Technologies used">
+                <span class="work-tech-tag">JavaScript</span>
+                <span class="work-tech-tag">PHP</span>
+                <span class="work-tech-tag">Laravel</span>
+                <span class="work-tech-tag">Kafka</span>
+                <span class="work-tech-tag">MySQL</span>
+                <span class="work-tech-tag">MongoDB</span>
+                <span class="work-tech-tag">AWS</span>
+                <span class="work-tech-tag">REST APIs</span>
+                <span class="work-tech-tag">Git</span>
+                <span class="work-tech-tag">Asterisk</span>
+              </div>
+            </article>
+
+            <article class="work-entry" role="listitem" data-animate>
+              <div class="work-entry-meta">
+                <time class="work-period" datetime="2021-10">
+                  October 2021 — January 2022
+                </time>
+                <span class="work-badge">Internship</span>
+              </div>
+
+              <h3 class="work-role">Software Development Engineer Intern</h3>
+
+              <p class="work-company">Creesync Software Private Limited</p>
+
+              <ul class="work-description">
+                <li>
+                  Developed and enhanced frontend UI components across multiple
+                  e-commerce platforms using React and TypeScript, consuming
+                  GraphQL APIs to enable dynamic, data-driven user interfaces.
+                </li>
+                <li>
+                  Integrated webhook event handling and performed performance
+                  optimizations across the stack using JavaScript, improving
+                  page load performance and user experience.
+                </li>
+              </ul>
+
+              <div class="work-tech" aria-label="Technologies used">
+                <span class="work-tech-tag">React</span>
+                <span class="work-tech-tag">TypeScript</span>
+                <span class="work-tech-tag">GraphQL</span>
+                <span class="work-tech-tag">REST APIs</span>
+                <span class="work-tech-tag">Git</span>
+              </div>
+            </article>
+
+            <article class="work-entry" role="listitem" data-animate>
+              <div class="work-entry-meta">
+                <time class="work-period" datetime="2021-06">
+                  June 2021 — September 2021
+                </time>
+                <span class="work-badge">Internship</span>
+              </div>
+
+              <h3 class="work-role">Frontend Developer Intern</h3>
+
+              <p class="work-company">Intensel Limited</p>
+
+              <ul class="work-description">
+                <li>
+                  Contributed to building a climate-risk SaaS platform by
+                  developing responsive UI components using React and Bootstrap,
+                  improving report generation workflows and overall usability.
+                </li>
+                <li>
+                  Built a data aggregation module consuming RESTful APIs to
+                  collect and transform multi-source datasets into structured,
+                  human-readable climate-risk analysis reports.
+                </li>
+              </ul>
+
+              <div class="work-tech" aria-label="Technologies used">
+                <span class="work-tech-tag">React</span>
+                <span class="work-tech-tag">TypeScript</span>
+                <span class="work-tech-tag">GraphQL</span>
+                <span class="work-tech-tag">REST APIs</span>
+                <span class="work-tech-tag">Git</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section class="work-section" aria-labelledby="skills-heading">
+          <div class="work-section-header">
+            <h2 class="work-section-title" id="skills-heading" data-animate>
+              Technical Skills
+            </h2>
+            <div class="work-section-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-group" data-animate data-animate-delay="0">
+              <p class="skill-group-title">Languages</p>
+              <div class="skill-tags">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TypeScript</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-animate data-animate-delay="80">
+              <p class="skill-group-title">Libraries &amp; Frameworks</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">NestJS</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">AngularJS</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-animate data-animate-delay="160">
+              <p class="skill-group-title">Data Stores &amp; Message Queues</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Kafka</span>
+                <span class="skill-tag">AWS SQS</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MariaDB</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">AWS S3</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-animate data-animate-delay="240">
+              <p class="skill-group-title">Cloud Technologies</p>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS Lambda</span>
+                <span class="skill-tag">AWS EKS</span>
+                <span class="skill-tag">AWS API Gateway</span>
+                <span class="skill-tag">AWS EventBridge</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-animate data-animate-delay="320">
+              <p class="skill-group-title">Other Technologies</p>
+              <div class="skill-tags">
+                <span class="skill-tag">RESTful APIs</span>
+                <span class="skill-tag">Webhooks</span>
+                <span class="skill-tag">Mongoose</span>
+                <span class="skill-tag">JWT</span>
+                <span class="skill-tag">OAuth</span>
+                <span class="skill-tag">Asterisk</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-animate data-animate-delay="400">
+              <p class="skill-group-title">Other Tools</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">Sentry</span>
+                <span class="skill-tag">Sumo Logic</span>
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Bitbucket</span>
+                <span class="skill-tag">Confluence</span>
+                <span class="skill-tag">Notion</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================== EDUCATION ===================== -->
+        <section class="work-section" aria-labelledby="education-heading">
+          <div class="work-section-header">
+            <h2 class="work-section-title" id="education-heading" data-animate>
+              Education
+            </h2>
+            <div class="work-section-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card" data-animate>
+              <div>
+                <h3 class="education-degree">
+                  B.Tech, Computer Science &amp; Engineering
+                </h3>
+                <p class="education-institution">
+                  Jaypee University of Engineering and Technology, Guna
+                </p>
+              </div>
+              <div class="education-meta">
+                <time class="education-year" datetime="2022">2018 – 2022</time>
+                <span class="education-grade">CGPA 8.4 / 10</span>
+              </div>
+            </article>
+
+            <article
+              class="education-card"
+              data-animate
+              data-animate-delay="80"
+            >
+              <div>
+                <h3 class="education-degree">
+                  Senior Secondary — Non-Medical (PCM)
+                </h3>
+                <p class="education-institution">Narayana Vidyalayam, Nagpur</p>
+              </div>
+              <div class="education-meta">
+                <time class="education-year" datetime="2018">2017 – 2018</time>
+                <span class="education-grade">66.2%</span>
+              </div>
+            </article>
+
+            <article
+              class="education-card"
+              data-animate
+              data-animate-delay="160"
+            >
+              <div>
+                <h3 class="education-degree">Secondary School</h3>
+                <p class="education-institution">
+                  The Royal Gondwana Public School, Nagpur
+                </p>
+              </div>
+              <div class="education-meta">
+                <time class="education-year" datetime="2016">2015 – 2016</time>
+                <span class="education-grade">81.7%</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===================== EXTRA CURRICULAR ===================== -->
+        <section class="work-section" aria-labelledby="activities-heading">
+          <div class="work-section-header">
+            <h2 class="work-section-title" id="activities-heading" data-animate>
+              Community &amp; Open Source
+            </h2>
+            <div class="work-section-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="activity-list">
+            <article class="activity-card" data-animate>
+              <h3 class="activity-title">
+                Student Ambassador — Microsoft Learn Student Ambassador
+              </h3>
+              <p class="activity-description">
+                Microsoft Learn Student Ambassadors is a global program by
+                Microsoft that empowers students to develop technical and
+                leadership skills by building communities, sharing knowledge,
+                and gaining hands-on experience with Microsoft technologies.
+                Part of a global team of student ambassadors dedicated to
+                learning and teaching — helping people upskill and become
+                innovators and creators of a better tomorrow.
+              </p>
+            </article>
+
+            <article class="activity-card" data-animate data-animate-delay="80">
+              <h3 class="activity-title">
+                Club Lead — Mozilla Phoenix Club JUET
+              </h3>
+              <p class="activity-description">
+                Led the premier technical society of Jaypee University of
+                Engineering and Technology — a chapter of Mozilla Campus Clubs
+                worldwide. Built a community around open-source technology,
+                organized workshops and events university-wide, and represented
+                the club at external events. Drove technical outreach with the
+                mission of growing together through open knowledge.
+              </p>
+            </article>
+
+            <article
+              class="activity-card"
+              data-animate
+              data-animate-delay="160"
+            >
+              <h3 class="activity-title">
+                Active Member — Mozilla Guna &amp; Mozilla Nagpur
+              </h3>
+              <p class="activity-description">
+                Mozilla Communities are part of the global Mozilla ecosystem
+                focused on building an open, accessible, and privacy-respecting
+                internet. Active participant in regional Mozilla communities
+                aimed at introducing developers to technical advancements in
+                Computer Science and promoting Mozilla's vision of building an
+                Open Web for All.
+              </p>
+            </article>
+
+            <article
+              class="activity-card"
+              data-animate
+              data-animate-delay="240"
+            >
+              <h3 class="activity-title">
+                Community Member — Facebook Developer Circles Indore
+              </h3>
+              <p class="activity-description">
+                Facebook Developer Circles (DevC) is a global community program
+                by Meta designed to connect developers, foster learning, and
+                support local tech ecosystems. Engaged with a regional Facebook
+                community that provides a collaborative platform for developers
+                to come together, learn, and grow through shared knowledge and
+                events.
+              </p>
+            </article>
+
+            <article
+              class="activity-card"
+              data-animate
+              data-animate-delay="320"
+            >
+              <h3 class="activity-title">Open Source Contributor</h3>
+              <p class="activity-description">
+                Contributed to projects across Facebook, DigitalOcean, Appwrite,
+                Sensenet, AquaSecurity, MayaData, UnoPlatform, Legesher, and
+                many more. Open source is how I give back to the developer
+                community and how I keep learning.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <span class="footer-brand"
+          ><span>&lt;As/&gt;</span> Aayush Srivastava</span
+        >
+        <p class="footer-copy">
+          &copy; 2024 Aayush Srivastava. Built with care &amp; vanilla CSS.
+        </p>
+        <nav class="footer-links" aria-label="Footer links">
+          <a
+            href="https://github.com/srivastavaayu"
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/srivastava-aayush"
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:aayu.2312@gmail.com" class="footer-link">Email</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

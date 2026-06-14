@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <title>404 — Page Not Found · Aayush Srivastava</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap&font-display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap&font-display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    /></noscript>
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("as-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <script>document.documentElement.classList.add('js-ready');</script>
+
+    <link rel="icon" href="images/aayush.jpg" />
+
+    <style>
+      .error-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: var(--space-8);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .error-page::before {
+        content: "404";
+        position: absolute;
+        font-size: clamp(160px, 30vw, 320px);
+        font-weight: var(--weight-black);
+        color: var(--border-subtle);
+        letter-spacing: var(--tracking-tight);
+        line-height: 1;
+        user-select: none;
+        pointer-events: none;
+        font-family: var(--font-mono);
+      }
+
+      .error-content {
+        position: relative;
+        z-index: 1;
+        max-width: 480px;
+      }
+
+      .error-eyebrow {
+        font-family: var(--font-mono);
+        font-size: var(--text-xs);
+        font-weight: var(--weight-semibold);
+        color: var(--accent-light);
+        letter-spacing: var(--tracking-wider);
+        text-transform: uppercase;
+        margin-bottom: var(--space-4);
+      }
+
+      .error-title {
+        font-size: var(--text-3xl);
+        font-weight: var(--weight-black);
+        letter-spacing: var(--tracking-tight);
+        color: var(--text-primary);
+        margin-bottom: var(--space-4);
+      }
+
+      .error-description {
+        font-size: var(--text-base);
+        color: var(--text-secondary);
+        line-height: var(--leading-loose);
+        margin-bottom: var(--space-8);
+      }
+
+      .error-actions {
+        display: flex;
+        gap: var(--space-3);
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="error-page" role="main">
+      <div class="error-content animate-fade-up">
+        <p class="error-eyebrow">Error 404</p>
+        <h1 class="error-title">Page not found.</h1>
+        <p class="error-description">
+          This page seems to have gone missing — or maybe it never existed.
+          Let's get you back somewhere familiar.
+        </p>
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            Go Home
+          </a>
+          <a href="projects.html" class="btn btn-secondary"> View Projects </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

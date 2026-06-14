@@ -1,150 +1,605 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/webfonts/all.css">
-		<link rel="stylesheet" href="css/stylesheet.css">
-		<script src="js/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-		<link rel="icon" href="images/aayush.jpg">
-		<title>Aayush Srivastava</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-md navbar-light">
-			<a class="navbar-brand" href="index.html"><span id="navbar-textlogo"><h5>&lt;As/&gt;</h5></span><h3>Aayush Srivastava</h3></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable-navmenu" aria-controls="collapsable-navmenu" aria-expanded="false">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div id="collapsable-navmenu" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto text-center">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="resume.html">Résumé</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="projects.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="main-content">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-md-3">
-						<nav id="resume-nav" class="navbar navbar-light">
-							<a class="navbar-brand" href="#">Projects</a>
-							<nav class="nav nav-pills flex-column">
-                                <a class="nav-link" href="#project8">EComWeb</a>
-                                <a class="nav-link" href="#project7">Campus Recruitment System</a>
-                                <a class="nav-link" href="#project6">To-Do and Notes</a>
-								<a class="nav-link" href="#project5">Academic Management System</a>
-                                <a class="nav-link" href="#project4">To-Do and Notes App</a>
-                                <a class="nav-link" href="#project3">Phonebook</a>
-                                <a class="nav-link" href="#project2">Tic-Tac-Toe</a>
-                                <a class="nav-link" href="#project1">Product Management System</a>
-							</nav>
-						</nav>
-					</div>
-					<div class="col-12 col-md-9">
-						<h2 class="page-title text-center">Projects</h2>
-						<div id="resume" data-spy="scroll" data-target="#resume-nav" data-offset="0">
-							<h5 id="project8">EComWeb</h5>
-							<p class="text-justify">EComWeb is a E-Commerce Web Application built with Laravel. The application works in conjunction with MySQL and Laravel serves the purpose for both frontend and backend of the application. The application is an up-and-running model of an e-commerce platform. The application is loaded with the necessary functionality of authentication, authorization, inventory management, product shopping, and validations on both the frontend as well as the backend.<br>
-								GitHub Project Link: <a href="https://github.com/srivastavaayu/ECommerceWebsite">EComWeb</a>
-							</p>
-                            <h5 id="project7">Campus Recruitment System</h5>
-							<p class="text-justify"> Campus Recruitment System is an online web-application system that manages recruitment activities in a higher academic institution. This system increases efficiency in various tasks of the recruitment process by bypassing manual processing of applications. Users (with adequate permissions) can manage other users, push/receive notifications, companies can broadcast new openings, students can apply to those job openings with their details, and many more…<br>
-								GitHub Project Link: <a href="https://github.com/srivastavaayu/Campus-Recruitment-System">Campus Recruitment System</a>
-							</p>
-                            <h5 id="project6">To-Do and Notes</h5>
-							<p class="text-justify">To-Do and Notes is a task management and note-taking platform to help the users of this service effectively manage their day-to-day tasks and take notes on the go. The user would be able to add, view, modify and delete both their to-dos and notes. The platform also offers its users to mark to-dos as done after which the to-dos are archived but still effectively visible to the users.<br>
-								GitHub Project Link: <a href="https://github.com/srivastavaayu/ToDoandNotes">To-Do and Notes</a>
-							</p>
-							<h5 id="project5">Academic Management System</h5>
-							<p class="text-justify">An Academic Management System is an online system which enables streamlining of academic activities in an academic institution. The aim was to increase consistency in academic activities (for eg. conducting examinations of students, notifying students by broadcasting important information, displaying a dashboard for all students to track their academic activities in their current academic year) so as to increase efficiency of admins and employees by allowing them to focus on more important work. This web-app is developed to work regardless of any scale, be it on a tiny scale of a school or a huge scale of a university.<br>
-								GitHub Project Link: <a href="https://github.com/srivastavaayu/Academic-Management-System">Academic Management System</a>
-							</p>
-                            <h5 id="project4">To-Do and Notes App</h5>
-							<p class="text-justify">
-								A To-Do and Notes Application is a task management and note-taking application to help users stay organized and
-								manage
-								their day-to-day tasks. This app brings together the power of two applications, a To-Do tasks manager, and a Notes
-								manager, into a single app so that the user does not have to migrate to different application for trivial tasks.
-								This
-								application uses the power of Android's Room Persistence Library to store persistent data of the application. Some
-								important functionalities like reminders for incomplete tasks, copy to clipboard have also been implemented in this
-								application.
-								Note: This application is currently only available for Android. iOS and other OS are not supported.
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projects by Aayush Srivastava — full-stack web applications, Android apps, and CLI tools built across JavaScript, PHP, Laravel, React, and more."
+    />
+    <meta property="og:title" content="Projects — Aayush Srivastava" />
+    <meta
+      property="og:description"
+      content="A collection of full-stack web applications, Android apps, and CLI tools built by Aayush Srivastava."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#0a0a0f" />
 
-								Features of To-Do and Notes Application:
-							<ol class="text-justify">
-								<li>Add, modify and delete to-do tasks and notes: The application gives you the option to add, modify and remove
-									to-do tasks and notes. You can edit tasks and notes if you want to change them.</li>
-								<li>Reminders with alarms: The application notifies you of deadlines you set for your to-do tasks.</li>
-								<li>Persistent Storage: The application uses the power of Android's Room Persistence Library to store app data like
-									tasks and notes so that data is stored even when the application is not running. The application also uses
-									Android's SharedPreferences for trivial information about the user of the application.</li>
-								<li>Copy to clipboard: The application gives you a context menu when you short-press on a to-do task or note but it
-									copies the task info or note to clipboard when you long-press on a to-do task or note.</li>
-							</ol>
-							GitHub Project Link: <a href="https://github.com/srivastavaayu/ToDoAndNotesApp">To-Do and Notes App</a>
-							</p>
-                            <h5 id="project3">Phonebook</h5>
-                            <p class="text-justify">A PhoneBook software that permanantly stores contacts in a database with all the relevant fields you wish to add.<br>
-                                <ol class="text-justify">
-                                    <li>Add Contact<br>
-                                        You can add a contact to the phonebook with as many details as you want.</li>
-                                    <li>Search Contact<br>
-                                        You can search for contacts and contacts will appear as you type.</li>
-                                    <li>Edit Contact<br>
-                                        You can edit a contact and change all the entries supplied while adding a contact.</li>
-                                    <li>Delete Contact<br>
-                                        You can delete a contact permanantly from your database.</li>
-                                    <li>Database Management System<br>
-                                        This program uses a database management system so that your contacts are permanantly stored until you choose to delete them.</li>
-                                </ol>
-                                GitHub Project Link: <a href="https://github.com/srivastavaayu/PhoneBook">Phonebook</a>
-                            </p>
-                            <h5 id="project2">Tic-Tac-Toe</h5>
-                            <p class="text-justify">
-                                Tic-Tac-Toe is a game of two players who take turns in drawing either an ‘0’ or ‘X’ in one square of a grid consisting of nine squares. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. This project lets the user compete with the computer. The computer tries hard to block the opponent and win the game. The user can choose who will go first, the computer or the player.<br>
-                                GitHub Project Link: <a href="https://github.com/srivastavaayu/tic-tac-toe">Tic-Tac-Toe</a>
-                            </p>
-                            <h5 id="project1">Product Management System</h5>
-                            <p class="text-justify">
-                                A supermarket is an expansive retail facility carrying a wide range of products under one roof, including full groceries lines and general merchandise. In theory, supermarkets allow customers to satisfy all their routine shopping needs in one trip. This project has all the basic and necessary functions that is involved in the working of product management software. The user can choose from a number of features such as add product(s), modify product(s) with the help of various unique identifiers, delete product(s), or simply search product(s).<br>
-                                <ol class="text-justify">
-                                    <li>Add A New Product:<br>
-                                        The user can choose this option to add a new product in the file by feeding information such as the product code, product name, product quantity and product price.</li>
-                                    <li>Show All The Products: <br>
-                                        The user can choose to view all the existing products parameters of the file such as product code, product name, product quantity and product price in a tabular format.</li>
-                                    <li>Check For Product Availability: <br>
-                                        The user can choose this option to manually find a particular product using the unique parameters of the product, i.e. product code and product name.</li>
-                                    <li>Modify A Product: <br>
-                                        The user can choose this option to manually find a particular product using the unique parameters of the product, i.e. product code and product name and then change the other parameters of the product such as product name, product quantity and product price except the product code.</li>
-                                    <li>Delete A Product: <br>
-                                        The user can choose this option to manually find a particular product using the unique parameters of the product, i.e. product code and product name and then delete the entire record corresponding to that particular product.</li>
-                                </ol>
-                                GitHub Project Link: <a href="https://github.com/srivastavaayu/Product-Management-at-Supermarket">Product Management System</a>
-                            </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright-aayush" class="text-center">Aayush Srivastava <i class="far fa-copyright"></i> 2023</div>
-	</body>
+    <title>Projects — Aayush Srivastava</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap&font-display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap&font-display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    /></noscript>
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("as-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+	<script>document.documentElement.classList.add('js-ready');</script>
+
+    <link rel="icon" href="images/aayush.jpg" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a
+          href="index.html"
+          class="nav-logo"
+          aria-label="Aayush Srivastava — Home"
+        >
+          <span class="nav-logo-mark" aria-hidden="true">&lt;As/&gt;</span>
+          <span class="nav-logo-name">Aayush Srivastava</span>
+        </a>
+
+        <div class="nav-links" role="list">
+          <a href="index.html" class="nav-link" role="listitem">Home</a>
+          <a href="work.html" class="nav-link" role="listitem">Work</a>
+          <a href="projects.html" class="nav-link" role="listitem">Projects</a>
+          <a href="contact.html" class="nav-link" role="listitem">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle light/dark theme">
+            <svg
+              class="icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <a href="work.html#resume-download" class="btn-nav-cta">
+            Download Résumé
+          </a>
+          <button class="nav-mobile-toggle" aria-label="Open navigation menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html" class="nav-mobile-link">Home</a>
+      <a href="work.html" class="nav-mobile-link">Work</a>
+      <a href="projects.html" class="nav-mobile-link">Projects</a>
+      <a href="contact.html" class="nav-mobile-link">Contact</a>
+      <a href="work.html#resume-download" class="nav-mobile-cta"
+        >Download Résumé</a
+      >
+    </div>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content" class="page-wrapper">
+      <div class="container">
+        <!-- Page Hero -->
+        <header class="page-hero">
+          <p class="page-hero-eyebrow" data-animate>Projects</p>
+          <h1 class="page-hero-title" data-animate data-animate-delay="100">
+            Things I've built.
+          </h1>
+          <p class="page-hero-subtitle" data-animate data-animate-delay="200">
+            A selection of personal and academic projects — full-stack web apps,
+            mobile apps, and CLI tools. All source code is on GitHub.
+          </p>
+        </header>
+
+        <!-- Projects Grid -->
+        <section aria-label="Project list">
+          <div class="projects-grid">
+            <!-- EComWeb -->
+            <article class="project-card" data-animate data-animate-delay="0">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">🛒</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/ECommerceWebsite"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="EComWeb on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">EComWeb</h2>
+              <p class="project-description">
+                A full-featured e-commerce web application built with Laravel
+                and MySQL. Includes authentication, authorization, inventory
+                management, product shopping, and frontend &amp; backend
+                validation — an end-to-end production-ready platform.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">PHP</span>
+                <span class="project-tech-tag">Laravel</span>
+                <span class="project-tech-tag">MySQL</span>
+                <span class="project-tech-tag">HTML/CSS</span>
+              </div>
+            </article>
+
+            <!-- Campus Recruitment System -->
+            <article class="project-card" data-animate data-animate-delay="60">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">🎓</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/Campus-Recruitment-System"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Campus Recruitment System on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">Campus Recruitment System</h2>
+              <p class="project-description">
+                An online system that manages the full recruitment lifecycle for
+                academic institutions. Supports multi-role user management, push
+                notifications, company job postings, and student applications —
+                replacing manual processing end-to-end.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">JavaScript</span>
+                <span class="project-tech-tag">Node.js</span>
+                <span class="project-tech-tag">React</span>
+                <span class="project-tech-tag">MySQL</span>
+                <span class="project-tech-tag">HTML/CSS</span>
+              </div>
+            </article>
+
+            <!-- Academic Management System -->
+            <article class="project-card" data-animate data-animate-delay="120">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">📚</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/Academic-Management-System"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Academic Management System on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">Academic Management System</h2>
+              <p class="project-description">
+                A scalable web platform that streamlines academic operations —
+                from conducting exams and broadcasting announcements to tracking
+                student progress dashboards. Designed to work at any scale, from
+                a single school to a full university.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">PHP</span>
+                <span class="project-tech-tag">MySQL</span>
+                <span class="project-tech-tag">JavaScript</span>
+                <span class="project-tech-tag">HTML/CSS</span>
+              </div>
+            </article>
+
+            <!-- To-Do and Notes (Web) -->
+            <article class="project-card" data-animate data-animate-delay="0">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">✅</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/ToDoandNotes"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="To-Do and Notes web app on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">
+                To-Do &amp; Notes
+                <span
+                  style="
+                    font-size: var(--text-sm);
+                    color: var(--text-tertiary);
+                    font-weight: var(--weight-regular);
+                  "
+                  >— Web</span
+                >
+              </h2>
+              <p class="project-description">
+                A task management and note-taking web platform. Users can add,
+                view, modify, and delete tasks and notes. Completed to-dos are
+                archived but remain visible — keeping history without cluttering
+                the active view.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">JavaScript</span>
+                <span class="project-tech-tag">React</span>
+                <span class="project-tech-tag">MySQL</span>
+                <span class="project-tech-tag">HTML/CSS</span>
+              </div>
+            </article>
+
+            <!-- To-Do and Notes App (Android) -->
+            <article class="project-card" data-animate data-animate-delay="60">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">📱</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/ToDoAndNotesApp"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="To-Do and Notes Android app on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">
+                To-Do &amp; Notes
+                <span
+                  style="
+                    font-size: var(--text-sm);
+                    color: var(--text-tertiary);
+                    font-weight: var(--weight-regular);
+                  "
+                  >— Android</span
+                >
+              </h2>
+              <p class="project-description">
+                A native Android app combining task management and note-taking
+                in one. Powered by Room Persistence Library for offline-first
+                storage. Features deadline reminders, clipboard copy, and full
+                CRUD for tasks and notes.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">Java</span>
+                <span class="project-tech-tag">Android</span>
+                <span class="project-tech-tag">Room DB</span>
+                <span class="project-tech-tag">SharedPreferences</span>
+              </div>
+            </article>
+
+            <!-- Phonebook -->
+            <article class="project-card" data-animate data-animate-delay="120">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">📞</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/PhoneBook"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Phonebook on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">Phonebook</h2>
+              <p class="project-description">
+                A CLI phonebook application backed by a persistent database.
+                Supports adding contacts with arbitrary fields, real-time
+                search-as-you-type, full contact editing, and permanent
+                deletion.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Tkinter</span>
+                <span class="project-tech-tag">SQLite</span>
+                <span class="project-tech-tag">CLI</span>
+              </div>
+            </article>
+
+            <!-- Tic-Tac-Toe -->
+            <article class="project-card" data-animate data-animate-delay="0">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">🎮</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/tic-tac-toe"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Tic-Tac-Toe on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">Tic-Tac-Toe</h2>
+              <p class="project-description">
+                A player vs. computer Tic-Tac-Toe game with a competitive AI
+                opponent that actively tries to block and win. The player can
+                choose who goes first, and the AI adapts its strategy each turn.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">CLI</span>
+              </div>
+            </article>
+
+            <!-- Product Management System -->
+            <article class="project-card" data-animate data-animate-delay="60">
+              <div class="project-card-header">
+                <div class="project-icon" aria-hidden="true">🏪</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/srivastavaayu/Product-Management-at-Supermarket"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Product Management System on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h2 class="project-name">Product Management System</h2>
+              <p class="project-description">
+                A supermarket inventory management system with login-based
+                authentication. Supports adding, searching, modifying, and
+                deleting products with pricing, tax calculation, and persistent
+                file-based storage.
+              </p>
+              <div class="project-tech" aria-label="Built with">
+                <span class="project-tech-tag">C++</span>
+                <span class="project-tech-tag">File I/O</span>
+                <span class="project-tech-tag">CLI</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- GitHub CTA -->
+        <section
+          class="section"
+          style="padding-top: var(--space-16)"
+          aria-label="View more on GitHub"
+        >
+          <div style="text-align: center" data-animate>
+            <p class="section-eyebrow" style="margin-bottom: var(--space-4)">
+              Want to see more?
+            </p>
+            <a
+              href="https://github.com/srivastavaayu"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              View all repositories on GitHub
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <span class="footer-brand"
+          ><span>&lt;As/&gt;</span> Aayush Srivastava</span
+        >
+        <p class="footer-copy">
+          &copy; 2024 Aayush Srivastava. Built with care &amp; vanilla CSS.
+        </p>
+        <nav class="footer-links" aria-label="Footer links">
+          <a
+            href="https://github.com/srivastavaayu"
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/srivastava-aayush"
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:aayu.2312@gmail.com" class="footer-link">Email</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

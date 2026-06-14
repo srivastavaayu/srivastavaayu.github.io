@@ -54,11 +54,15 @@
       })();
     </script>
 
-    <script>document.documentElement.classList.add('js-ready');</script>
+    <script>
+      document.documentElement.classList.add("js-ready");
+    </script>
 
     <link rel="icon" href="images/aayush.jpg" />
   </head>
   <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <!-- ===================== NAV ===================== -->
@@ -180,7 +184,10 @@
               <span class="typewriter-cursor" aria-hidden="true"></span>
             </p>
 
-            <p class="hero-description animate-fade-up animate-delay-3">
+            <p
+              class="hero-description animate-fade-up animate-delay-3"
+              id="hero-greeting"
+            >
               Hi, I'm Aayush — a Senior Software Engineer at
               <a
                 href="https://www.trajector.com"
@@ -214,15 +221,7 @@
               </a>
             </div>
 
-            <div
-              class="hero-stats"
-              style="
-                display: flex;
-                gap: 32px;
-                margin-bottom: 32px;
-                flex-wrap: wrap;
-              "
-            >
+            <div class="hero-stats">
               <div>
                 <div
                   style="

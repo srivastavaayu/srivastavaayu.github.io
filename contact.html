@@ -49,11 +49,15 @@
       })();
     </script>
 
-    <script>document.documentElement.classList.add('js-ready');</script>
+    <script>
+      document.documentElement.classList.add("js-ready");
+    </script>
 
     <link rel="icon" href="images/aayush.jpg" />
   </head>
   <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <!-- ===================== NAV ===================== -->
@@ -176,6 +180,7 @@
                 class="contact-intro-sub"
                 data-animate
                 data-animate-delay="100"
+                id="contact-time"
               >
                 I'm most responsive over email and LinkedIn. Feel free to
                 connect on any of these platforms.

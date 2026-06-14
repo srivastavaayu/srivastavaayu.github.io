@@ -525,6 +525,12 @@ button { cursor: pointer; border: none; background: none; }
   position: relative;
 }
 
+@media (min-width: 901px) {
+  .hero-visual {
+    margin-top: -100px;
+  }
+}
+
 .hero-image-frame {
   position: relative;
   width: 320px;
@@ -546,7 +552,7 @@ button { cursor: pointer; border: none; background: none; }
   position: absolute;
   inset: -40px;
   border-radius: 50%;
-  border: 1px dashed var(--border-subtle);
+  border: 3px dashed var(--border-subtle);
   animation: rotate-ring 30s linear infinite reverse;
 }
 
@@ -605,6 +611,27 @@ button { cursor: pointer; border: none; background: none; }
 .hero-image-badge-sub {
   font-size: var(--text-xs);
   color: var(--text-tertiary);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 640px) {
+  .hero-stats {
+    gap: 16px;
+  }
+
+  .hero-stats > div:not([style*="width: 1px"]) div:first-child {
+    font-size: 1.2rem;
+  }
+
+  .hero-stats > div:not([style*="width: 1px"]) div:last-child {
+    font-size: 0.65rem;
+  }
 }
 
 /* ============================================================
@@ -1576,4 +1603,113 @@ button { cursor: pointer; border: none; background: none; }
 [data-theme="light"] .nav.scrolled {
   background: rgba(250, 250, 250, 0.98);
   box-shadow: 0 1px 16px rgba(0,0,0,0.08);
+}
+
+/* Easter egg: Logo glitch effect */
+@keyframes glitch-1 {
+  0%, 100% { clip-path: inset(0 0 90% 0); transform: translate(-2px, 0); }
+  25%       { clip-path: inset(30% 0 50% 0); transform: translate(2px, 0); }
+  50%       { clip-path: inset(60% 0 20% 0); transform: translate(-1px, 0); }
+  75%       { clip-path: inset(80% 0 5% 0);  transform: translate(1px, 0); }
+}
+
+@keyframes glitch-2 {
+  0%, 100% { clip-path: inset(50% 0 30% 0); transform: translate(2px, 0);  }
+  25%       { clip-path: inset(10% 0 70% 0); transform: translate(-2px, 0); }
+  50%       { clip-path: inset(75% 0 10% 0); transform: translate(1px, 0);  }
+  75%       { clip-path: inset(20% 0 60% 0); transform: translate(-1px, 0); }
+}
+
+.nav-logo-mark {
+  position: relative;
+}
+
+.nav-logo-mark::before,
+.nav-logo-mark::after {
+  content: '<As/>';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-logo-mark::before {
+  color: #ff3cac;
+  padding: inherit;
+}
+
+.nav-logo-mark::after {
+  color: #00f0ff;
+  padding: inherit;
+}
+
+.nav-logo:hover .nav-logo-mark::before {
+  opacity: 0.8;
+  animation: glitch-1 0.4s steps(1) infinite;
+}
+
+.nav-logo:hover .nav-logo-mark::after {
+  opacity: 0.8;
+  animation: glitch-2 0.4s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-logo:hover .nav-logo-mark::before,
+  .nav-logo:hover .nav-logo-mark::after {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* Easter egg: Avatar cursor trail */
+@keyframes trail-float {
+  0%   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -120%) scale(0.4); }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+.spotlight {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(124, 58, 237, 0.09) 0%,
+    rgba(124, 58, 237, 0.03) 40%,
+    transparent 70%
+  );
+}
+
+[data-theme="dark"] .spotlight {
+  opacity: 1;
+}
+
+[data-theme="light"] .spotlight {
+  opacity: 1;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(124, 58, 237, 0.06) 0%,
+    rgba(124, 58, 237, 0.02) 40%,
+    transparent 70%
+  );
 }

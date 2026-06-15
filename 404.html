@@ -111,7 +111,58 @@
   <body>
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <div class="spotlight" id="spotlight" aria-hidden="true"></div>
-    <main class="error-page" role="main">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Aayush Srivastava — Home">
+          <span class="nav-logo-mark" aria-hidden="true">&lt;As/&gt;</span>
+          <span class="nav-logo-name">Aayush Srivastava</span>
+        </a>
+        <div class="nav-links" role="list">
+          <a href="index.html" class="nav-link" role="listitem">Home</a>
+          <a href="work.html" class="nav-link" role="listitem">Work</a>
+          <a href="projects.html" class="nav-link" role="listitem">Projects</a>
+          <a href="contact.html" class="nav-link" role="listitem">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+          <a href="work.html#resume-download" class="btn-nav-cta">Download Résumé</a>
+          <button class="nav-mobile-toggle" aria-label="Open navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav-mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html" class="nav-mobile-link">Home</a>
+      <a href="work.html" class="nav-mobile-link">Work</a>
+      <a href="projects.html" class="nav-mobile-link">Projects</a>
+      <a href="contact.html" class="nav-mobile-link">Contact</a>
+      <a href="work.html#resume-download" class="nav-mobile-cta">Download Résumé</a>
+    </nav>
+
+    <main id="main-content" class="error-page" role="main">
       <div class="error-content animate-fade-up">
         <p class="error-eyebrow">Error 404</p>
         <h1 class="error-title">Page not found.</h1>
@@ -136,7 +187,7 @@
             </svg>
             Go Home
           </a>
-          <a href="projects.html" class="btn btn-secondary"> View Projects </a>
+          <a href="contact.html" class="btn btn-secondary"> Get in Touch </a>
         </div>
       </div>
     </main>

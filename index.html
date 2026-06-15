@@ -15,6 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://srivastavaayu.github.io/" />
     <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://srivastavaayu.github.io/" />
     <meta name="twitter:creator" content="@aaysrivastava" />
     <meta name="theme-color" content="#0a0a0f" />
 
@@ -59,6 +60,22 @@
     </script>
 
     <link rel="icon" href="images/aayush.jpg" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aayush Srivastava",
+      "url": "https://srivastavaayu.github.io/",
+      "jobTitle": "Senior Software Engineer",
+      "worksFor": { "@type": "Organization", "name": "Trajector" },
+      "sameAs": [
+        "https://linkedin.com/in/srivastava-aayush",
+        "https://github.com/srivastavaayu",
+        "https://twitter.com/aaysrivastava"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
@@ -85,7 +102,7 @@
         </div>
 
         <div class="nav-actions">
-          <button class="theme-toggle" aria-label="Toggle light/dark theme">
+          <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">
             <!-- Moon icon (shown in dark mode) -->
             <svg
               class="icon-moon"
@@ -147,7 +164,7 @@
     </nav>
 
     <!-- Mobile menu -->
-    <div class="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <nav class="nav-mobile-menu" aria-label="Mobile navigation">
       <a href="index.html" class="nav-mobile-link">Home</a>
       <a href="work.html" class="nav-mobile-link">Work</a>
       <a href="projects.html" class="nav-mobile-link">Projects</a>
@@ -155,7 +172,7 @@
       <a href="work.html#resume-download" class="nav-mobile-cta"
         >Download Résumé</a
       >
-    </div>
+    </nav>
 
     <!-- ===================== MAIN ===================== -->
     <main id="main-content" class="page-wrapper">
@@ -178,7 +195,7 @@
 
             <p
               class="hero-typewriter animate-fade-up animate-delay-2"
-              aria-label="Software Engineer. Open Source Contributor. ML Enthusiast."
+              aria-label="Software Engineer. Open Source Contributor. AI Enthusiast. Tech Enthusiast."
               data-typewriter='["Software Engineer.","Open Source Contributor.","AI Enthusiast.","Tech Enthusiast."]'
             >
               <span class="typewriter-cursor" aria-hidden="true"></span>
@@ -223,103 +240,23 @@
 
             <div class="hero-stats">
               <div>
-                <div
-                  style="
-                    font-size: 1.5rem;
-                    font-weight: 800;
-                    letter-spacing: -0.03em;
-                    color: var(--text-primary);
-                  "
-                >
-                  4+
-                </div>
-                <div
-                  style="
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                    color: var(--text-tertiary);
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
-                    margin-top: 2px;
-                  "
-                >
-                  Years Exp.
-                </div>
+                <div class="hero-stat-value">4+</div>
+                <div class="hero-stat-label">Years Exp.</div>
               </div>
-              <div style="width: 1px; background: var(--border-subtle)"></div>
+              <div class="hero-stat-divider" aria-hidden="true"></div>
               <div>
-                <div
-                  style="
-                    font-size: 1.5rem;
-                    font-weight: 800;
-                    letter-spacing: -0.03em;
-                    color: var(--text-primary);
-                  "
-                >
-                  4+
-                </div>
-                <div
-                  style="
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                    color: var(--text-tertiary);
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
-                    margin-top: 2px;
-                  "
-                >
-                  Orgs
-                </div>
+                <div class="hero-stat-value">4+</div>
+                <div class="hero-stat-label">Companies</div>
               </div>
-              <div style="width: 1px; background: var(--border-subtle)"></div>
+              <div class="hero-stat-divider" aria-hidden="true"></div>
               <div>
-                <div
-                  style="
-                    font-size: 1.5rem;
-                    font-weight: 800;
-                    letter-spacing: -0.03em;
-                    color: var(--text-primary);
-                  "
-                >
-                  8+
-                </div>
-                <div
-                  style="
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                    color: var(--text-tertiary);
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
-                    margin-top: 2px;
-                  "
-                >
-                  OSS Orgs
-                </div>
+                <div class="hero-stat-value">8+</div>
+                <div class="hero-stat-label">OSS Orgs</div>
               </div>
-              <div style="width: 1px; background: var(--border-subtle)"></div>
+              <div class="hero-stat-divider" aria-hidden="true"></div>
               <div>
-                <div
-                  style="
-                    font-size: 1.5rem;
-                    font-weight: 800;
-                    letter-spacing: -0.03em;
-                    color: var(--text-primary);
-                  "
-                >
-                  15+
-                </div>
-                <div
-                  style="
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                    color: var(--text-tertiary);
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
-                    margin-top: 2px;
-                  "
-                >
-                  Projects
-                </div>
+                <div class="hero-stat-value">15+</div>
+                <div class="hero-stat-label">Projects</div>
               </div>
             </div>
 
@@ -377,29 +314,6 @@
                 </svg>
               </a>
               <a
-                href="https://twitter.com/aaysrivastava"
-                class="hero-social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X profile"
-                role="listitem"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-                  />
-                </svg>
-              </a>
-              <a
                 href="mailto:aayu.2312@gmail.com"
                 class="hero-social-link"
                 aria-label="Send email"
@@ -434,6 +348,7 @@
                 width="320"
                 height="320"
                 loading="eager"
+                fetchpriority="high"
               />
               <div class="hero-image-badge">
                 <span class="hero-image-badge-icon">🔥</span>
@@ -588,19 +503,11 @@
             </div>
 
             <div class="skill-group">
-              <p class="skill-group-title">Community Roles</p>
+              <p class="skill-group-title">Community Leadership</p>
               <div class="skill-tags">
-                <span class="skill-tag"
-                  >Student Ambassador at Microsoft Learn Student Ambassadors
-                  Program</span
-                >
-                <span class="skill-tag"
-                  >Club Lead at Mozilla Phoenix Club JUET</span
-                >
-                <span class="skill-tag"
-                  >Community Member at Facebook Dev Circles</span
-                >
-                <span class="skill-tag">+many more</span>
+                <span class="skill-tag">Microsoft Learn Ambassador</span>
+                <span class="skill-tag">Mozilla Club Lead</span>
+                <span class="skill-tag">Facebook Dev Circles</span>
               </div>
             </div>
           </div>
@@ -609,58 +516,17 @@
 
       <section class="section" aria-labelledby="cta-heading">
         <div class="container">
-          <div
-            style="
-              background: linear-gradient(
-                135deg,
-                var(--accent-subtle) 0%,
-                var(--bg-elevated) 100%
-              );
-              border: 1px solid var(--accent-glow);
-              border-radius: var(--radius-xl);
-              padding: var(--space-16) var(--space-12);
-              text-align: center;
-            "
-            data-animate
-          >
-            <p class="section-eyebrow" style="margin-bottom: var(--space-4)">
-              Let's work together
-            </p>
-            <h2
-              id="cta-heading"
-              style="
-                font-size: var(--text-4xl);
-                font-weight: var(--weight-black);
-                letter-spacing: var(--tracking-tight);
-                color: var(--text-primary);
-                margin-bottom: var(--space-4);
-                line-height: var(--leading-tight);
-              "
-            >
+            <div class="cta-block" data-animate>
+            <p class="section-eyebrow">Let's work together</p>
+            <h2 id="cta-heading" class="cta-block-title">
               Interested in working<br />with me?
             </h2>
-            <p
-              style="
-                font-size: var(--text-lg);
-                color: var(--text-secondary);
-                margin-bottom: var(--space-8);
-                max-width: 480px;
-                margin-inline: auto;
-                margin-bottom: var(--space-8);
-              "
-            >
+            <p class="cta-block-subtitle">
               I'm actively looking for new opportunities. Whether it's a
               full-time role, open source collaboration, or just a conversation
               — my inbox is open.
             </p>
-            <div
-              style="
-                display: flex;
-                gap: var(--space-4);
-                justify-content: center;
-                flex-wrap: wrap;
-              "
-            >
+            <div class="cta-block-actions">
               <a href="contact.html" class="btn btn-primary">Get in Touch</a>
               <a href="work.html#resume-download" class="btn btn-secondary"
                 >Download Résumé</a
@@ -678,7 +544,7 @@
           ><span>&lt;As/&gt;</span> Aayush Srivastava</span
         >
         <p class="footer-copy">
-          &copy; 2024 Aayush Srivastava. Built with care &amp; vanilla CSS.
+          &copy; 2026 Aayush Srivastava. Built with care &amp; vanilla CSS.
         </p>
         <nav class="footer-links" aria-label="Footer links">
           <a

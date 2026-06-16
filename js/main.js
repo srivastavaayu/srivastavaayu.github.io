@@ -307,9 +307,9 @@
     const hour = ist.getHours();
 
     let greeting;
-    if (hour >= 5 && hour < 12) greeting = "Good morning";
-    else if (hour >= 12 && hour < 17) greeting = "Good afternoon";
-    else if (hour >= 17 && hour < 21) greeting = "Good evening";
+    if (hour >= 5 && hour < 12) greeting = "Good morning!";
+    else if (hour >= 12 && hour < 17) greeting = "Good afternoon!";
+    else if (hour >= 17 && hour < 21) greeting = "Good evening!";
     else if (hour >= 21) greeting = "Burning the midnight oil?";
     else greeting = "Up late?";
 
@@ -318,8 +318,7 @@
     el.innerHTML = `
       ${greeting} I'm Aayush —
       a Senior Software Engineer at <a href="https://www.trajector.com" target="_blank" rel="noopener noreferrer">Trajector</a>.
-      I build full-stack web applications, love open source deeply,
-      and am currently exploring the vast realms of artificial intelligence.
+      By day I architect scalable backend systems and AI automation pipelines. By night I contribute to open source. I care deeply about the craft of writing software that lasts.
       ${isLate ? '<br><span style="font-size:var(--text-sm);color:var(--text-tertiary);font-family:var(--font-mono);">// it\'s late in India too, by the way.</span>' : ""}
     `;
   }

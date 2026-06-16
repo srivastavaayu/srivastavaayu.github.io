@@ -1013,6 +1013,102 @@ button { cursor: pointer; border: none; background: none; }
   line-height: var(--leading-loose);
 }
 
+.activity-period {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  letter-spacing: var(--tracking-wide);
+  margin-bottom: var(--space-2);
+  display: block;
+}
+
+/* ============================================================
+   ACHIEVEMENT CARDS — distinct from activity cards
+   ============================================================ */
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, var(--accent-subtle) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--accent-glow);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-8);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  transition: all var(--duration-base) var(--ease-out);
+  position: relative;
+  overflow: visible;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at top right, var(--accent-glow), transparent 70%);
+  pointer-events: none;
+  border-radius: 0 var(--radius-xl) 0 0;
+}
+
+.achievement-card:hover {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, var(--accent-subtle) 0%, var(--bg-elevated) 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), 0 0 0 1px var(--accent-glow);
+}
+
+.achievement-icon {
+  font-size: var(--text-2xl);
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-glow);
+  border-radius: var(--radius-md);
+}
+
+.achievement-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.achievement-title {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+  line-height: var(--leading-snug);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.achievement-sub {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: var(--leading-loose);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.achievement-org {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-light);
+  font-weight: var(--weight-medium);
+}
+
 /* ============================================================
    PROJECTS PAGE
    ============================================================ */
